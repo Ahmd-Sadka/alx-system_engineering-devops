@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -p --ignore-backups --group-directories-first | sed 's/^/.\//' | sed 's/\/\//\//' | sed 's/,$/\n/'
+ls -ap1 | paste -sd',' -; echo
