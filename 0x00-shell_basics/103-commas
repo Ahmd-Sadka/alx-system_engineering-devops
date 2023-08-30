@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -p --ignore-backups --group-directories-first
+ls -m -p --ignore-backups --group-directories-first | sed 's/^/.\//' | sed 's/\/\//\//' | sed 's/,$/\n/'
